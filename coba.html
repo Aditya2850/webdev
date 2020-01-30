@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            alert('Hello World')
+            document.write("<h2>Hello World</h2>")
+            var x = 5
+            var katakata = "X = "+ x
+            if (x < 7){
+                document.write("<h2>X kurangg dari 7</h2>")
+            }
+            document.write("<h2> X = "+x+"</h2>")
+            
+            var onClick = () =>{
+                var input = document.getElementById('nama').value
+                alert('input adalah ' +input)
+            }
+
+            
+            var TAMBAHAN = () => {
+                var input1 = parseInt(document.getElementById('input1')).value
+                var input2 = parseInt(document.getElementById('input2')).value
+                alert('ditambah = '+(input1 + input2))
+            }
+
+
+            var getTanggalHariIni = () => {
+                document.write(+Date())
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input id='nama' type="text">
+        <button onclick="onClick()">
+            Click me
+        </button>
+
+        <br><br><br>
+
+        <button onclick="getTanggalHariIni()">
+                date
+            </button>
+    
+            <br><br><br>
+
+        <input id='input1' type="text">
+        <input id='input1' type="text">
+        <button onclick="TAMBAHAN()">tambah </button>
+    </body>
+</html>
